@@ -1,0 +1,47 @@
+<html>
+	<head>
+		
+		<link rel="stylesheet" href="css/kube.css" />
+		<link rel="stylesheet" href="css/cssshake.min.css" />
+		<link rel="stylesheet" href="css/game.css" />
+		<link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		
+		<div class="player-info"></div>
+		<div class="actions"></div>
+
+		<script type="text/template" id="template--player-info">
+			<div class="player-info__name">Your Health</div>
+			<div class="player-info__stats-toggle stats-toggle">Stats</div>
+			<div class="player-info__stats-wrap stats-wrap">
+				<div class="player-info__stats-view stats-view"></div>
+			</div>
+			<div class="player-info__ailments"></div>
+				<div id="player-info--tp">
+				<div id="progressBar--player-tp" class="progress-bar progress-bar--player-hp-tp"><div></div></div>
+			<div class="player-info__tp-count"></div>
+			</div>
+			<div id="player-info__hp">
+				<div id="progressBar--player" class="progress-bar progress-bar--player-hp"><div></div></div>
+				<div class="player-info__hp-count">
+					<span class="player-hp--current">0</span>/<span class="player-hp--total">0</span>
+				</div>
+			</div>
+		</script>
+
+		<script type="text/template" id="template--actions">
+			<button id="resurrect" class="btn btn-blue">Resurrect (-30% exp)</button>
+			<button id="fight--monster" class="btn btn-red">Fight Monster</button>
+			<button id="fight--attack" class="btn btn-red">Attack</button>
+ 			<button id="heal" class="btn btn-green">Heal</button>
+			<button id="train" class="btn training--no">Train</button>
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/underscore.js"></script>
+		<script type="text/javascript" src="js/backbone.js"></script>
+		<script type="text/javascript" src="js/kube.js"></script>
+		<script type="text/javascript" src="js/seige.js"></script>
+	<body>
+</html>
